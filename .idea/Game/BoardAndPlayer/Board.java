@@ -3,7 +3,7 @@ import java.util.Arraylist;
 public class Board {
 
     //cartas que o jogador possui na mao
-    private Arraylist<Card> mao = new ArrayList<Card>();
+    private Arraylist<Card> hand = new ArrayList<Card>();
 
     //cartas no campo
     private Arraylist<Card> infantary = new ArrayList<Card>();
@@ -23,21 +23,21 @@ public class Board {
 
     public tabuleiro(){
         //construtor da mao do jogador
-        mao = new ArrayList<Card>();
+        hand = new ArrayList<Card>();
 
         //construtor dos campos de batalha
         infantary = new ArrayList<Card>();
         artillary = new ArrayList<Card>();
-        cerco = new ArrayList<Card>();
+        siege = new ArrayList<Card>();
     }
 
     //getters e setters
-    public Arraylist<Card> getMao() {
-        return mao;
+    public Arraylist<Card> getHand() {
+        return hand;
     }
 
-    public void setMao(Arraylist<Card> mao) {
-        this.mao = mao;
+    public void setHand(Arraylist<Card> hand) {
+        this.hand = hand;
     }
 
     public Arraylist<Card> getInfantary() {
