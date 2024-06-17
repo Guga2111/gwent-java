@@ -1,14 +1,16 @@
-import java.util.Arraylist;
+package Game;
+
+import java.util.ArrayList;
 
 public class Board {
 
     //cartas que o jogador possui na mao
-    private Arraylist<Card> hand = new ArrayList<Card>();
+    private Arraylist<Card> hand;
 
     //cartas no campo
-    private Arraylist<Card> infantary = new ArrayList<Card>();
-    private Arraylist<Card> artillary = new ArrayList<Card>();
-    private Arraylist<Card> siege = new ArrayList<Card>();
+    private Arraylist<Card> infantary;
+    private Arraylist<Card> artillary;
+    private Arraylist<Card> siege;
 
     //pontos de cada campo
     private int infantary_points = 0;
@@ -23,12 +25,12 @@ public class Board {
 
     public tabuleiro(){
         //construtor da mao do jogador
-        hand = new ArrayList<Card>();
+        this.hand = new ArrayList<>();
 
         //construtor dos campos de batalha
-        infantary = new ArrayList<Card>();
-        artillary = new ArrayList<Card>();
-        siege = new ArrayList<Card>();
+        this.infantary = new ArrayList<>();
+        this.artillary = new ArrayList<>();
+        this.siege = new ArrayList<>();
     }
 
     //getters e setters
